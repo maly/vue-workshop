@@ -1,21 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <p>Name: {{name}}</p>
-    <p><input type="text" v-model="name"></p>
-    <router-view></router-view>
+  <myButton></myButton>
+  <myButton></myButton>
   </div>
 </template>
 
 <script>
+import myButton from './components/myButton'
 export default {
   name: 'app',
 
-  data () {
-    return {
-      name: 'Martin'
-    }
-  }
+  components: {myButton}
+
 }
 </script>
 
