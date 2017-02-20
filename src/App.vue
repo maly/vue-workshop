@@ -1,13 +1,21 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <p>Name: {{name}}</p>
+    <p><input type="text" v-model="name"></p>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+
+  data () {
+    return {
+      name: 'Martin'
+    }
+  }
 }
 </script>
 
